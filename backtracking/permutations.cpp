@@ -1,8 +1,10 @@
 class Solution {
 public:
     int n;
-    vector<vector<int>> res;
-    unordered_set<int> st;
+    vector<vector<int>> res;//this strore the final answer // intially its empty
+    unordered_set<int> st;//This keeps track of Which numbers are already used in the current permutation.
+
+
 
     void solve (vector<int>&temp , vector<int>&nums){
         if(temp.size() == n){
